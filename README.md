@@ -8,7 +8,7 @@ Implementation of 'Bayes by Backprop' from Blundell et al. (2015) using Tensorfl
 The network (MLP with two hidden layers of 200 units each, ReLU activation) achieves ~98-98.2% performance on MNIST. The distribution of the standard deviations of all weights in the network throughout training is shown in the figure below.
 ![alt tag](mnist_w_sigma_hist.png)
 
-Regression problem, fitting a cubic curve ($y=x^3$) with an MLP network with a single hidden layer of 100 ReLU units.
+Regression problem, fitting a cubic curve (y=x^3) with an MLP network with a single hidden layer of 100 ReLU units.
 ![alt tag](regression.png)
 
 
