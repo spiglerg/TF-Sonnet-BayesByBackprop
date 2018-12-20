@@ -52,8 +52,6 @@ class BNNLayer(snt.AbstractModule):
           log_probs: `tf.Tensor` KL loss of the network
         """
 
-        #### TODO: GLOBAL VS LOCAL REPARAMETRIZATION TRICK! -- local: not sampling the weights, but instead layer activations.    act = (inp*mu_w+mu_b) + epsilon*sqrt( inp^2*sigma_w^2+sigma_b^2 )
-
         if sample:
             w = self.w_distr.sample()
             b = self.b_distr.sample()
